@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · Raul Olmedo</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f8fa; color: #202936; font: 17px/1.7 system-ui, sans-serif; }
+    .wrap { max-width: 820px; margin: auto; padding: 28px 24px; }
+    header { border-bottom: 1px solid #d8dee6; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 12px; font-size: 15px; }
+    a { color: #075bb5; text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #075bb5; outline-offset: 4px; }
+    main { background: #fff; border: 1px solid #d8dee6; border-radius: 16px; margin-top: 28px; padding: 30px; }
+    h1 { line-height: 1.2; font-size: clamp(28px, 5vw, 40px); margin-top: 0; }
+    h2 { line-height: 1.35; font-size: 23px; margin-top: 32px; }
+    footer { font-size: 14px; color: #526174; }
+    @media (max-width: 480px) { .wrap { padding: 20px 16px; } main { padding: 22px 18px; } }
+    @media (prefers-color-scheme: dark) {
+      body { background: #101720; color: #e6edf3; }
+      main { background: #18212d; } header, main { border-color: #364253; }
+      a { color: #87beff; } footer { color: #b1bdcc; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="{{ '/' | relative_url }}">Raul Olmedo</a>
+      <nav aria-label="Información de la integración">
+        <a href="{{ '/google-health/' | relative_url }}">La integración</a>
+        <a href="{{ '/google-health/privacy/' | relative_url }}">Privacidad</a>
+        <a href="{{ '/google-health/terms/' | relative_url }}">Condiciones</a>
+      </nav>
+    </header>
+    <main id="contenido"><h1>{{ page.title | escape }}</h1>{{ content }}</main>
+    <footer><p>Integración personal e independiente. No es una aplicación oficial de Google, Fitbit u OpenAI.</p></footer>
+  </div>
+</body>
+</html>
