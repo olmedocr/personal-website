@@ -27,7 +27,7 @@ El acceso a Google y la conexión mediante el túnel utilizan conexiones cifrada
 
 **OpenAI** recibe los resultados de las herramientas utilizadas en ChatGPT, que pueden contener datos de salud. El contexto que ChatGPT envíe al complemento puede incluir información relevante de la consulta. El tratamiento y conservación en ChatGPT dependen de las políticas del servicio y de la configuración de la cuenta; consulta la [política de privacidad de OpenAI](https://openai.com/policies/privacy-policy/) y los controles de datos de ChatGPT.
 
-**GitHub Pages**, cuando aloja estas páginas, puede procesar información técnica de las visitas según la [política de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Estas páginas no incorporan formularios de salud, analítica propia ni rastreadores añadidos por esta integración. Las credenciales y los registros de salud no se publican en el repositorio de la web.
+**Netlify** aloja estas páginas y puede procesar información técnica de las visitas, como la dirección IP y los registros de acceso, según su [política de privacidad](https://www.netlify.com/privacy/). **GitHub** aloja el código fuente público de la web. Estas páginas no incorporan formularios de salud, analítica propia ni rastreadores añadidos por esta integración. Las credenciales y los registros de salud no se publican en el repositorio de la web.
 
 ## Conservación y eliminación
 
